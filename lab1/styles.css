@@ -4,6 +4,7 @@ body
 	background-image: url('background.jpg');
 	background-attachment: fixed;
 	background-size: cover;
+	background-blend-mode: lighten;
 }
 header
 {
