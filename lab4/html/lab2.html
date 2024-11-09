@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Language" content="pl" />
+		<meta name="Author" content="Michał Kutryb" />
+		<link rel="stylesheet" href="../css/styles.css"/>
+        <script src="../js/timedate.js" type="text/javascript"></script>
+		<script src="../js/kolorujtlo.js" type="text/javascript"></script>
+		<title>Moje hobby to Pokemony</title>
+	</head>
+    <body onload="startclock()">
+		<header>
+			<a href="../index.html"><h1>Moje hobby to <b>Pokemony</b></h1></a>
+		</header>
+		<table>
+			<tr>
+				<td class = "menu">
+					<a href="czymsa.html">Czym są Pokemony</a>
+					<a href="seriale.html">Seriale Pokemon</a>
+					<a href="gry.html">Gry Pokemon</a>
+					<a href="karty.html">Karty Pokemon</a>
+					<a href="ulubione.html">Moje ulubione Pokemony</a>
+					<a href="kontakt.html">Kontakt</a>
+					<div class="dropdown">
+						<a href="#" class="dropbtn">Laboratoria</button>
+						<div class="dropdown-content">
+						  <a href="lab2.html">Lab 2</a>
+						  <a href="lab3.html">Lab 3</a>
+						  <a href="lab4.php">Lab 4</a>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class = "content">
+					<h1><b>LAB 2</b></h1>
+
+					<h4>Pokoloruj stronę!</h4>
+					<FORM METHOD="POST" NAME="background">
+						<INPUT TYPE="button" VALUE="żółty" ONCLICK="changeBackground('#FFF000')">
+						<INPUT TYPE="button" VALUE="czarny" ONCLICK="changeBackground('#000000')">
+						<INPUT TYPE="button" VALUE="biały" ONCLICK="changeBackground('#FFFFFF')">
+						<INPUT TYPE="button" VALUE="zielony" ONCLICK="changeBackground('#00FF00')">
+						<INPUT TYPE="button" VALUE="niebieski" ONCLICK="changeBackground('#0000FF')">
+						<INPUT TYPE="button" VALUE="pomarańczowy" ONCLICK="changeBackground('#FF8000')">
+						<INPUT TYPE="button" VALUE="szary" ONCLICK="changeBackground('#c0c0c0')">
+						<INPUT TYPE="button" VALUE="czerwony" ONCLICK="changeBackground('#FF0000')">
+					</FORM>
+					
+					<h4>Aktualna data i czas</h4>
+					<div id="zegarek"></div>
+					<div id="data"></div>
+				</td>
+			</tr>
+			<tr>
+				<td class = "footer">
+					Autor: Michał Kutryb 169326
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

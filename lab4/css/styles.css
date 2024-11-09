@@ -1,7 +1,7 @@
 body 
 {
 	font-family: Verdana;
-	background-image: url('background.jpg');
+	background-image: url('../../img/background.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 	background-blend-mode: lighten;
@@ -74,4 +74,34 @@ a
 	margin-bottom: 15px;
 
 }
+
+.dropbtn {
+	background-color: blue;
+	color: yellow;
+	text-decoration: none;
+	padding: 20px;
+	border: none;
+  }
+  
+  .dropdown {
+	position: relative;
+	display: inline-block;
+  }
+  
+  .dropdown-content {
+	display: none;
+	position: absolute;
+	min-width: 132px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+  }
+  
+  .dropdown-content a 
+  {
+	display: block;
+  }
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #00008B;}
 		

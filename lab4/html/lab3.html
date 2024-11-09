@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="Content-Language" content="pl" />
+		<meta name="Author" content="Michał Kutryb" />
+		<link rel="stylesheet" href="../css/styles.css"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<title>Moje hobby to Pokemony</title>
+	</head>
+	<body>
+		<header>
+			<a href="../index.html"><h1>Moje hobby to <b>Pokemony</b></h1></a>
+		</header>
+		<table>
+			<tr>
+				<td class = "menu">
+					<a href="czymsa.html">Czym są Pokemony</a>
+					<a href="seriale.html">Seriale Pokemon</a>
+					<a href="gry.html">Gry Pokemon</a>
+					<a href="karty.html">Karty Pokemon</a>
+					<a href="ulubione.html">Moje ulubione Pokemony</a>
+					<a href="kontakt.html">Kontakt</a>
+					<div class="dropdown">
+						<a href="#" class="dropbtn">Laboratoria</button>
+						<div class="dropdown-content">
+						  <a href="lab2.html">Lab 2</a>
+						  <a href="lab3.html">Lab 3</a>
+						  <a href="lab4.php">Lab 4</a>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td class = "content">
+					<h1><b>LAB 3</b></h1>
+					
+					<h3>Kliknij aby powiększyć</h3>
+					<img id="animacjaTestowal" src="../../img/hello.gif">
+					<br>
+					<h3>Najedź aby powiekszyć, odjedź aby zmniejszyć</h3>
+					<img id="animacjaTestowa2" src="../../img/hello.gif">
+					<br>
+					<h3>Klikaj aby powiększać</h3>
+					<img id="animacjaTestowa3" src="../../img/hello.gif">
+				</td>
+			</tr>
+			<tr>
+				<td class = "footer">
+					Autor: Michał Kutryb 169326
+				</td>
+			</tr>
+		</table>
+		<script>
+			$("#animacjaTestowal").on("click", function() {
+			$(this).animate({
+            width: "500px"
+			}, 1500);
+			});
+			
+			$("#animacjaTestowa2").on({
+        "mouseover": function() {
+            $(this).animate({
+                width: 500
+            }, 800);
+        },
+        "mouseout": function() {
+            $(this).animate({
+                width: 200
+            }, 800);
+        }
+    });
+		
+		$("#animacjaTestowa3").on("click", function() {
+        if (!$(this).is(":animated")) {
+            $(this).animate({
+                width: "+=50",
+                height: "+=10",
+                opacity: "+=0.1",
+                duration: 3000 // inny sposób deklaracji czasu trwania animacji
+            });
+        }
+    });
+			
+		</script>
+	</body>
+</html>

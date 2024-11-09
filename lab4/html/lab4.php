@@ -4,12 +4,12 @@
 		<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
 		<meta http-equiv="Content-Language" content="pl" />
 		<meta name="Author" content="Michał Kutryb" />
-		<link rel="stylesheet" href="styles.css"/>
+		<link rel="stylesheet" href="../css/styles.css"/>
 		<title>Moje hobby to Pokemony</title>
 	</head>
 	<body>
 		<header>
-			<a href="index.html"><h1>Moje hobby to <b>Pokemony</b></h1></a>
+			<a href="../index.html"><h1>Moje hobby to <b>Pokemony</b></h1></a>
 		</header>
 		<table>
 			<tr>
@@ -20,26 +20,24 @@
 					<a href="karty.html">Karty Pokemon</a>
 					<a href="ulubione.html">Moje ulubione Pokemony</a>
 					<a href="kontakt.html">Kontakt</a>
+					<div class="dropdown">
+						<a href="#" class="dropbtn">Laboratoria</button>
+						<div class="dropdown-content">
+						  <a href="lab2.html">Lab 2</a>
+						  <a href="lab3.html">Lab 3</a>
+						  <a href="lab4.html">Lab 4</a>
+						</div>
+					</div>
 				</td>
 			</tr>
 			<tr>
 				<td class = "content">
-					<img class = "left" src="kontakt1.jpg">
-					<img class = "right" src="kontakt2.jpg">
-					<h3>Kontakt</h3>
-					<p>
-						Zapraszam do kontaktu, odpowiadam na każdą wiadomość :)
-					</p>
-					<form action="mailto:169326@student.uwm.edu.pl" method="post" enctype="text/plain">
+					<h1><b>LAB 4</b></h1>
 					
-						<label for="nick">Twój nick:</label><br>
-						<input type="text" id="nick" name="nick" required><br><br>
-						
-						<label for="message">Treść wiadomości:</label><br>
-						<textarea id="message" name="message" rows="6" cols="40" required></textarea><br><br>
-						
-						<input type="submit" value="Wyślij">
-					</form>
+                    <?php
+						include('../php/labor_169326_2.php')
+					?>
+
 				</td>
 			</tr>
 			<tr>
