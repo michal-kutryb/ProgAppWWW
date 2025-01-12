@@ -1,0 +1,43 @@
+					<h1><b>LAB 3</b></h1>
+					
+					<h3>Kliknij aby powiększyć</h3>
+					<img id="animacjaTestowal" src="../img/hello.gif">
+					<br>
+					<h3>Najedź aby powiekszyć, odjedź aby zmniejszyć</h3>
+					<img id="animacjaTestowa2" src="../img/hello.gif">
+					<br>
+					<h3>Klikaj aby powiększać</h3>
+					<img id="animacjaTestowa3" src="../img/hello.gif">
+				
+		<script>
+			$("#animacjaTestowal").on("click", function() {
+			$(this).animate({
+            width: "500px"
+			}, 1500);
+			});
+			
+			$("#animacjaTestowa2").on({
+        "mouseover": function() {
+            $(this).animate({
+                width: 500
+            }, 800);
+        },
+        "mouseout": function() {
+            $(this).animate({
+                width: 200
+            }, 800);
+        }
+    });
+		
+		$("#animacjaTestowa3").on("click", function() {
+        if (!$(this).is(":animated")) {
+            $(this).animate({
+                width: "+=50",
+                height: "+=10",
+                opacity: "+=0.1",
+                duration: 3000 // inny sposób deklaracji czasu trwania animacji
+            });
+        }
+    });
+			
+		</script>
